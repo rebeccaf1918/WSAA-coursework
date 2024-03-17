@@ -41,6 +41,7 @@ data2 = response2.json()
 
 wind_direction = data2['current']['wind_direction_10m']
 wind_direction_unit = data2['current_units']['wind_direction_10m'] # to obtain the unit wind direction is displayed in
+# Per https://windy.app/blog/what-is-wind-direction.html, wind direction is measured in degrees from 0 to 360, where 0 means north
 
 # Printing the current wind direction 
 print (f"The current wind direction is: {wind_direction}{wind_direction_unit}")
